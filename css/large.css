@@ -8,5 +8,14 @@ header .hero-text p {
 
 header .fa-chevron-down {
   display: block;
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-animation: bounce 1.6s infinite;
+          animation: bounce 1.6s infinite;
+  color: #fff;
 }
 /*# sourceMappingURL=large.css.map */
