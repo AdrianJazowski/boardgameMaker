@@ -34,7 +34,8 @@ body
     margin-top: -66px
     height: 66px
     content: ''
-
+.jumbotron
+    margin: 0
 //Nav
 nav
     text-transform: uppercase
@@ -94,14 +95,6 @@ header
     .fa-chevron-down
         display: none
 
-@media screen and ( max-width: 375px )
-    header
-        .hero-text
-            h1
-                font-size: 36px
-            p
-                font-size: 16px
-
 //main
 
 #aboutus
@@ -114,6 +107,34 @@ header
     p
         font-size: 14px
 
-    .aboutus-hover:hover
+    .aboutus-hover
         transition: color .3s
+        visibility: hidden
+
+    .aboutus-hover:hover
+
         color: $blue-color
+#aboutus-hero
+    color: #ddd
+    .jumbotron
+        position: relative
+        background-image: url('../img/chess-mobile.jpg')
+        background-position: center
+        background-size: cover
+        z-index: 0
+
+    .about-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, .7)
+        z-index: -10
+
+@media screen and ( max-width: 375px )
+    header
+        .hero-text
+            h1
+                font-size: 36px
+            p
+                font-size: 16px
