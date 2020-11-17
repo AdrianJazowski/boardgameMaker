@@ -1,3 +1,5 @@
+$blue-color: #039dff
+
 *,* ::after, *::before
     box-sizing: border-box
     margin: 0
@@ -11,10 +13,32 @@ body
     font-family: 'Montserrat', sans-serif
     background-color: #333
 .blue-text
-    color: #039dff
-//Navigacja
+    color: $blue-color
+
+.wrapper
+    width: 80%
+    margin: 0 auto
+
+    h2
+        text-transform: uppercase
+        text-align: center
+
+.underline
+    margin: 0 auto
+    width: 60px
+    height: 4px
+    background-color: $blue-color
+
+.scroll-fix::before
+    display: block
+    margin-top: -66px
+    height: 66px
+    content: ''
+
+//Nav
 nav
     text-transform: uppercase
+    transition: background-color .5s
 
     a,i
         color: #fff
@@ -22,14 +46,18 @@ nav
     i
         padding: 10px
     a:hover
-        color: #039dff
+        color: $blue-color
     .navbar-brand
         font-weight: bold
     .active
-        color: #039dff
+        color: $blue-color
+.shadow-bg
+    background-color: rgba(0,0,0,.8)
 
+    // Header
 header
     color: #fff
+    overflow: hidden
     h1
         padding: 10px
         text-transform: uppercase
@@ -73,3 +101,19 @@ header
                 font-size: 36px
             p
                 font-size: 16px
+
+//main
+
+#aboutus
+    i
+        font-size: 30px
+        margin-top: 20px
+    h3
+        font-size: 18px
+        text-transform: uppercase
+    p
+        font-size: 14px
+
+    .aboutus-hover:hover
+        transition: color .3s
+        color: $blue-color

@@ -19,8 +19,34 @@ body {
   color: #039dff;
 }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  margin: 0 auto;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 66px;
+  margin-top: -66px;
+}
+
 nav {
   text-transform: uppercase;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
 }
 
 nav a, nav i {
@@ -45,8 +71,13 @@ nav .active {
   color: #039dff;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 header {
   color: #fff;
+  overflow: hidden;
 }
 
 header h1 {
@@ -111,5 +142,25 @@ header .fa-chevron-down {
   header .hero-text p {
     font-size: 16px;
   }
+}
+
+#aboutus i {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#aboutus h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#aboutus p {
+  font-size: 14px;
+}
+
+#aboutus .aboutus-hover:hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  color: #039dff;
 }
 /*# sourceMappingURL=main.css.map */
