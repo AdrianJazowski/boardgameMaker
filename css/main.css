@@ -184,6 +184,10 @@ header .fa-chevron-down {
   font-size: 32px;
 }
 
+#aboutus-hero .jumbotron h3 {
+  text-transform: uppercase;
+}
+
 #aboutus-hero .jumbotron i {
   font-size: 35px;
 }
