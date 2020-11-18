@@ -30,7 +30,7 @@ body {
 }
 
 .underline {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 60px;
   height: 4px;
   background-color: #039dff;
@@ -41,6 +41,10 @@ body {
   margin-top: -66px;
   height: 66px;
   content: '';
+}
+
+.visibility {
+  visibility: hidden;
 }
 
 .jumbotron {
@@ -169,10 +173,23 @@ header .fa-chevron-down {
 
 #aboutus-hero .jumbotron {
   position: relative;
+  padding: 60px 0px;
   background-image: url("../img/chess-mobile.jpg");
   background-position: center;
   background-size: cover;
   z-index: 0;
+}
+
+#aboutus-hero .jumbotron h2 {
+  font-size: 32px;
+}
+
+#aboutus-hero .jumbotron i {
+  font-size: 35px;
+}
+
+#aboutus-hero .jumbotron p {
+  font-size: 14px;
 }
 
 #aboutus-hero .about-shadow {
@@ -184,12 +201,31 @@ header .fa-chevron-down {
   z-index: -10;
 }
 
-@media screen and (max-width: 375px) {
+#aboutus-hero .about-hero-item {
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 375px) {
   header .hero-text h1 {
     font-size: 36px;
   }
   header .hero-text p {
     font-size: 16px;
+  }
+  #aboutus-hero .jumbotron h2 {
+    font-size: 36px;
+  }
+  #aboutus-hero .jumbotron h3 {
+    font-size: 32px;
+  }
+  #aboutus-hero .jumbotron p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  #aboutus-hero .jumbotron {
+    padding: 80px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
