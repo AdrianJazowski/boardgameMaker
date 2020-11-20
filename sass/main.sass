@@ -16,6 +16,7 @@ body
     color: $blue-color
 
 .wrapper
+    max-width: 2560px
     width: 80%
     margin: 0 auto
 
@@ -146,6 +147,30 @@ header
         z-index: -10
     .about-hero-item
         margin: 10px 0
+
+//portfolio
+#portfolio
+    h2
+        text-align: center
+        text-transform: uppercase
+    .carousel-item
+        position: relative
+        height: 600px
+        img
+            position: absolute
+            height: 100%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+    .carousel-caption
+        position: absolute
+        left: 0
+        right: 0
+        padding: 40px 0
+        background-color: rgba(0, 0, 0, .8)
+    .carousel-indicators
+        padding-bottom: 20px
 
 @media screen and ( min-width: 375px )
     header
