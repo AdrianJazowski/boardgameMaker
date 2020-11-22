@@ -5,4 +5,8 @@ header .hero-text h1 {
 header .hero-text h1 p {
   font-size: 20px;
 }
+
+#team .card-body {
+  height: 150px;
+}
 /*# sourceMappingURL=medium.css.map */
